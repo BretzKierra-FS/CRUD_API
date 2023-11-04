@@ -1,10 +1,10 @@
 const express = require('express');
 require('dotenv').config();
-const connectDB = require('../server/app/db/config');
+const connectDB = require('../CRUD_API/app/db/config');
 const cors = require('cors');
 const path = require('path');
 const app = express();
-const routeHandler = require('../server/app/routes');
+const routeHandler = require('../CRUD_API/app/routes/index');
 
 connectDB();
 const PORT = process.env.PORT || 4000;
